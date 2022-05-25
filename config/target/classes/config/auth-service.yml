@@ -1,0 +1,50 @@
+server:
+  port: 5000
+
+management:
+  endpoints:
+    web:
+      cors:
+        allowed-origins: true
+      base-path: /actuator
+      exposure:
+        include:
+    jmx:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+  security:
+    enabled: false
+  context-path: /mgmt
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 30000
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    registration-service:
+      path: /registration/**
+      sensitiveHeaders:
+
+eureka:
+  instance:
+    health-check-url-path: ${server.context-path}${management.context-path}/health
+    status-page-url-path: ${server.context-path}${management.context-path}/info
+    metadata-map:
+      management.context-path: ${server.context-path}${management.context-path}
+
+secret: jazaradebuggers
