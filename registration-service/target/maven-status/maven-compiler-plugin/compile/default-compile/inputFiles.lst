@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\domain\UserDTO.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\repository\VerificationTokenRepository.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\domain\VerificationToken.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\client\AuthServiceClient.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\RegistrationApplication.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\config\listener\RegistrationListener.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\config\OnRegistrationCompleteEvent.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\controller\RegistrationController.java
+C:\Users\Administrator\Desktop\icu\registration-service\src\main\java\com\jazara\icu\registration\service\VerificationTokenService.java

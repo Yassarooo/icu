@@ -2,20 +2,6 @@ server:
   port: 5000
 
 management:
-  endpoints:
-    web:
-      cors:
-        allowed-origins: true
-      base-path: /actuator
-      exposure:
-        include:
-    jmx:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: always
-      enabled: true
   security:
     enabled: false
   context-path: /mgmt
