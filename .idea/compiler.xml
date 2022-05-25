@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumecam-service" />
+        <module name="config" />
+        <module name="zipkin" />
+        <module name="registry" />
+        <module name="auth-service" />
+        <module name="monitor" />
+        <module name="registration-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-service" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="consumecam-service" target="1.8" />
+      <module name="monitor" target="1.8" />
+      <module name="registration-service" target="1.8" />
+      <module name="registry" target="1.8" />
+      <module name="spring-boot-cloud" target="1.8" />
+      <module name="zipkin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
