@@ -1,0 +1,54 @@
+###/cam/add
+POST localhost:5000/cam/add
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXNzYXJvIiwiZXhwIjoxNjUzNzAwMDIyLCJpYXQiOjE2NTM0NDA4MjJ9.Q13za7gdX_uxOi5hJ_lrWICohCb7FHGfgTba3aCiDAwQ67qFuE1opcxBqS37qpf421ecgOO1frx0G6db3BNlNw
+Content-Type: application/json
+
+{
+  "name": "cam1room1dep1branch1",
+  "room_id": "2",
+  "url": "rtsp://185.147.54.2/username=ahmad&password=ahmad"
+}
+
+###/room/add
+POST localhost:5000/room/add
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXNzYXJvIiwiZXhwIjoxNjUzNzAwMDIyLCJpYXQiOjE2NTM0NDA4MjJ9.Q13za7gdX_uxOi5hJ_lrWICohCb7FHGfgTba3aCiDAwQ67qFuE1opcxBqS37qpf421ecgOO1frx0G6db3BNlNw
+Content-Type: application/json
+
+{
+  "name": "room1dep2branch7",
+  "dep_id": "2"
+}
+
+
+###/department/add
+POST localhost:5000/department/add
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXNzYXJvIiwiZXhwIjoxNjUzNzAwMDIyLCJpYXQiOjE2NTM0NDA4MjJ9.Q13za7gdX_uxOi5hJ_lrWICohCb7FHGfgTba3aCiDAwQ67qFuE1opcxBqS37qpf421ecgOO1frx0G6db3BNlNw
+Content-Type: application/json
+
+{
+    "name": "dep1branch7",
+    "branch_id": "7",
+    "location": "damascus"
+}
+
+###/branch/add
+POST localhost:5000/branch/add
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXNzYXJvIiwiZXhwIjoxNjUzNzAwMDIyLCJpYXQiOjE2NTM0NDA4MjJ9.Q13za7gdX_uxOi5hJ_lrWICohCb7FHGfgTba3aCiDAwQ67qFuE1opcxBqS37qpf421ecgOO1frx0G6db3BNlNw
+Content-Type: application/json
+
+{"name": "branch1","location": "damas"}
+
+###login
+POST localhost:5000/api/login?username=yrhacker@hotmail.com&password=yassaro
+
+###register
+POST http://localhost:5000/registration/register
+Content-Type: application/json
+
+{"name": "yassar","username": "yassaroo", "email": "yrhacker2@hotmail.com", "gender": "Male","password": "yassaro", "phonenumber": "0992156565", "dob": "1999-07-09" }
+
+###confirm
+POST http://localhost:5000/registration/registrationconfirm
+Content-Type: application/x-www-form-urlencoded
+
+token=131254&email=yrhacker@hotmail.com
